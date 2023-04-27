@@ -16,36 +16,39 @@ public class FacturaTelefono {
     private double valorFactura;
     
     public void establecerNumeroTelefono(String c){
-        numeroTelefono = c;
+        this.numeroTelefono = c;
+    }public void establecerValorFactura(double valorFactura){
+     this.valorFactura = valorFactura;
+     establecerValorFactura(valorFactura);
+    }
+    public void establecerMinutosMes(double c){
+        this.minutosMes = c;
     }
     
-    public void establecerMinutosMes(double c){
-        minutosMes = c;
-    }
     
     public void establecerValorMinuto(double c){
-        valorMinuto = c;
+        this.valorMinuto = c;
     }
     
     // public void establecerValorFactura(){
     public void calcularValorFactura(){
-        valorFactura = minutosMes * valorMinuto;
+        this.valorFactura = minutosMes * valorMinuto;
     }
     
     public String obtenerNumeroTelefono(){
-        return numeroTelefono;
+        return this.numeroTelefono;
     }
     
     public double obtenerMinutosMes(){
-        return minutosMes;
+        return this.minutosMes;
     }
     
     public double obtenerValorMinuto(){
-        return valorMinuto;
+        return this.valorMinuto;
     }
     
     public double obtenerValorFactura(){
-        return valorFactura;
+        return this.valorFactura;
     }
     
     
